@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Program</title>
+    <link rel="icon" type="image/png" href="logo-tital.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+    <!-- emailjs -->
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('toKzawcnCkGkIFbKC')
+</script>
+
+
+<body>
+
+    <div class="Flex">
+            <div class="logo-mini"><a href="index.html"><img class="logo" src="LOGO-mini.jpeg" alt="logo"></a></div>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="toolbox">
+            <div class="Home"><a href="index.html">Home</a></div>
+            <div class="program"><a href="program.html">Our Program</a></div>
+            <div class="more_info"><a href="more_info.html">more info</a></div>
+            <div class="FAQ"><a href="faq.html">About us</a></div>
+        </div> 
+    </div>
+    <div class="space">
+        <h1 class="heading">Our Program</h1>
+    </div>
+    <div class="programsections">
+        <div class="section">
+            <h2>Single Lesson Package</h2>
+            <p>this course is designed for drivers who need just one class of driving.</p>
+            <p>one class is around 1 hour</p>
+            <button class="select-btn" onclick="selectPackage('Single Lesson Package – 1 hour lesson')">
+                Select Package
+            </button>
+        </div>
+        <div class="section">
+            <h2>Multi Lesson Package</h2>
+            <p>This course is designed for drivers who need multiple lessons to improve their driving skills.</p>
+            <p>we offer packages of 4.5 to 6 hour lessons.</p>
+            <button class="select-btn" onclick="selectPackage('Multi Lesson Package – 4.5 to 6 hour lessons')">
+                Select Package
+            </button>
+
+        </div>
+        <div class="section">
+            <h2>Co-Pilot Package</h2>
+            <p>Co-pilot and Vehicle only: $75 +HST</p>
+            <p>1 Hour lesson + Co-Pilot and Vehicle: $130 +HST</p>
+            <button class="select-btn" onclick="selectPackage('Co-Pilot Package – $75 + HST (Vehicle only) or $130 + HST (1 Hour Lesson)')">
+                Select Package 
+            </button>
+
+        </div>
+    </div>
+    <br>
+        
+    <form id="form" class="form">
+    <input type="text" name="name" id="name" placeholder="Enter your first name">
+    <small class="error" id="nameError"></small>
+
+    <input type="email" name="email" id="email" placeholder="Enter your email address">
+    <small class="error" id="emailError"></small>
+
+    <textarea class="message" name="message" id="message" placeholder="Type your message here"></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button class="select-btn" type="submit" id="button">Submit Your Inquiry</button>
+  </form>
+    
+</body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    
+    <!--test-->
+
+  <meta name="description" content="Ready 2 Drive offers professional driving lessons to help you become a safe, confident driver. Book your lesson today." />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- OPEN GRAPH (GOOGLE + SOCIAL PREVIEW) -->
+  <meta property="og:title" content="Ready 2 Drive | Professional Driving Lessons" />
+  <meta property="og:description" content="Learn to drive with certified instructors. Safe, affordable, and professional driving lessons." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ready2drive.netlify.app" />
+  <meta property="og:image" content="https://ready2drive.netlify.app/preview.png" />
+
+
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="EBM3w-OkI_gqw1VXrElIkpnLmgokd6cGrMwviCDm9pc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo-tital.png"/>
+    <title>Ready 2 Drive</title>
+    <link rel="icon" type="image/png" href="logo-tital.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    
+</head>
+
+    <!-- emailjs -->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('toKzawcnCkGkIFbKC')
+    </script>
+
+
+
+
+<body>
+    <div class="Flex">
+            <div class="logo-mini"><a href="index.html"><img class="logo" src="LOGO-mini.jpeg" alt="logo"></a></div>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="toolbox">
+            <div class="Home"><a href="index.html">Home</a></div>
+            <div class="program"><a href="program.html">Our Program</a></div>
+            <div class="more_info"><a href="more_info.html">more info</a></div>
+            <div class="FAQ"><a href="faq.html">About us</a></div>
+        </div>
+    </div>
+    <div class="space">
+        <h1 class="heading">Welcome to Ready 2 Drive</h1>
+    </div>
+    <main>
+        <div class="main">
+            <div class="pic">
+                <img class="car" src="car.jpeg" alt="car">
+            </div>
+            <div class="class">
+                <h2>Learn 2 Drive</h2>
+                <p>Personalized driving lessons to help you become a confident and safe driver</p>
+                <a href="more_info.html"><button class="btn">Get Started</button></a>
+            </div>
+        </div>
+    </main>
+    <form id="form" class="form">
+    <input type="text" name="name" id="name" placeholder="Enter your first name">
+    <small class="error" id="nameError"></small>
+
+    <input type="email" name="email" id="email" placeholder="Enter your email address">
+    <small class="error" id="emailError"></small>
+
+    <textarea class="message" name="message" id="message" placeholder="Type your message here"></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button class="select-btn" type="submit" id="button">Submit Your Inquiry</button>
+  </form>
+
+    <div class="end">
+        <p>&copy; 2025 Learn 2 Drive. All rights reserved.</p>
+    </div>
+</body>
+</html>

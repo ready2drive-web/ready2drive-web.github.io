@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More info</title>
+    <link rel="icon" type="image/png" href="logo-tital.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('toKzawcnCkGkIFbKC');
+</script>
+<script src="script.js" defer></script>
+</head>
+
+<!-- emailjs -->
+
+    
+
+
+<body>
+    <div class="Flex">
+            <div class="logo-mini"><a href="index.html"><img class="logo" src="LOGO-mini.jpeg" alt="logo"></a></div>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="toolbox">
+            <div class="Home"><a href="index.html">Home</a></div>
+            <div class="program"><a href="program.html">Our Program</a></div>
+            <div class="more_info"><a href="more_info.html">more info</a></div>
+            <div class="FAQ"><a href="faq.html">About us</a></div>
+        </div>
+    </div>
+    <div class="space">
+        <h1 class="heading">More info</h1>
+    </div>
+    <div class="testing">  
+<section class="lessons">
+  <h1>Driving Lessons</h1>
+
+  <div class="grid">
+    <!-- Beginner -->
+    <div class="text-box">
+      <h2>Beginner</h2>
+      <p>
+        Our beginner lessons are designed to help new drivers understand essential driving
+         skills while developing confidence and safe habits from the very start.
+      </p>
+    </div>
+
+    <div class="image-box">
+      <img src="beginner.png" alt="Beginner driving lesson">
+    </div>
+
+    <!-- Defensive -->
+    <div class="text-box">
+      <h2>Defensive</h2>
+      <p>
+        This course focuses on defensive driving strategies that teach drivers how to recognize
+         risks early and respond safely to unexpected situations on the road.
+      </p>
+    </div>
+
+    <div class="image-box">
+      <img src="defensive.jpg" alt="Defensive driving">
+    </div>
+
+    <!-- Refresher -->
+    <div class="image-box">
+      <img src="refresher.jpg" alt="Refresher course">
+    </div>
+
+    <div class="text-box">
+      <h2>Refresher</h2>
+      <p>Ideal for licensed drivers who want to sharpen their skills,
+         our refresher lessons help rebuild confidence and improve overall driving performance.
+      </p>
+    </div>
+
+    <!-- Advanced -->
+    <div class="image-box">
+      <img src="advanced.jpg" alt="Advanced driving">
+    </div>
+
+    <div class="text-box">
+      <h2>Advanced</h2>
+      <p>
+        Our advanced lessons are built for drivers looking to refine their abilities, covering complex driving
+         situations such as highway driving, traffic awareness, and precise parking techniques.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <div class="content">
+        <h3>Our Driving Program</h3>
+    </div>
+    <div class="detil">
+        <p>The use of basic vehicle controls</p>
+        <p>Space Management</p>
+        <p>Controlled and uncontrolled Intersections (4-way, 2-way)</p>
+        <p>Lane changing and merging</p>
+        <p>Parking techniques</p>
+        <p>Emergency situation and accident avoidance skills.</p>
+    </div>
+
+    
+<section class="contact">
+  <div class="contact-left">
+    <h1>Contact Us Today</h1>
+
+    <p>
+      Reach out for inquiries about our licensed driver education
+      and new driver training programs. We're here to help you
+      succeed on the road!
+    </p>
+
+    <div class="contact-info">
+      <strong>Support</strong><br>
+      <a href="tel:9023160904">902-316-0904</a>
+    </div>
+
+    <div class="contact-info">
+      <strong>Info</strong><br>
+      <a href="mailto:ready2drive2025@gmail.com">ready2drive2025@gmail.com</a>
+    </div>
+  </div>
+
+  <form id="form" class="contact-form">
+    <label>Your First Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your first name">
+    <small class="error" id="nameError"></small>
+
+    <label>Your Email Address*</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email address">
+    <small class="error" id="emailError"></small>
+
+    <label>Your Message*</label>
+    <textarea name="message" id="message" placeholder="Type your message here"></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button type="submit" id="button">Submit Your Inquiry</button>
+  </form>
+</section>
+
+
+
+</body>
